@@ -29,7 +29,12 @@ module.exports = {
       accounts:
         process.env.PRIVATE_KEY !== undefined ? [process.env.PRIVATE_KEY] : [],
     },
-  },
+    avaxTestnet: {
+      url: process.env.AVAXTESTNET_URL || "",
+      accounts:
+        process.env.PRIVATE_KEY !== undefined ? [process.env.PRIVATE_KEY] : [],
+    },
+  }, 
   gasReporter: {
     enabled: process.env.REPORT_GAS !== undefined,
     currency: "USD",
